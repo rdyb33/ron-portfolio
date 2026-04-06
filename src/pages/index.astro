@@ -8,249 +8,280 @@ projects.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 ---
 
 <Layout>
+	<div class="blueprint-bg"></div>
 	<main class="resume-container">
 		<!-- Header / Contact Info -->
 		<header class="resume-header">
-			<h1>Ron D. Bulischeck III</h1>
-			<div class="contact-info">
-				<span>154 Vista Vallarta Drive • Union, MO 63084</span>
-				<span><a href="tel:+16602383658">(660) 238-3658</a></span>
-				<span><a href="mailto:rbulischeck@gmail.com">rbulischeck@gmail.com</a></span>
-				<span class="web-only"><a href="https://github.com/rdyb33" target="_blank">github.com/rdyb33</a></span>
+			<div class="header-content">
+				<h1>Ron D. <span class="accent-text">Bulischeck</span> III</h1>
+				<div class="contact-info">
+					<span class="info-item"><span class="label">LOC</span> Union, MO</span>
+					<span class="info-item"><span class="label">TEL</span> <a href="tel:+16602383658">(660) 238-3658</a></span>
+					<span class="info-item"><span class="label">EML</span> <a href="mailto:rbulischeck@gmail.com">rbulischeck@gmail.com</a></span>
+					<span class="info-item web-only"><span class="label">GIT</span> <a href="https://github.com/rdyb33" target="_blank">github.com/rdyb33</a></span>
+				</div>
 			</div>
 		</header>
 
-		<!-- Executive Summary -->
-		<section class="resume-section">
-			<h2>Executive Summary</h2>
-			<p>
-				Strategic professional focused on defining clear, measurable objectives for operational efficiency. Expert in process optimization, data-driven decision-making, and implementing best practices to achieve tangible improvements in key performance indicators. Over 10 years of experience in manufacturing and process engineering, with a proven ability to execute complex technical projects that deliver measurable results. Currently managing automation strategy and process standardization for Paulo Products (Aalberts).
-			</p>
-		</section>
+		<div class="resume-grid">
+			<!-- Main Column -->
+			<div class="main-col">
+				<!-- Executive Summary -->
+				<section class="resume-section">
+					<h2 class="section-title">Objective / Summary</h2>
+					<p class="summary-text">
+						Strategic professional focused on defining clear, measurable objectives for operational efficiency. Expert in **process optimization**, **data-driven decision-making**, and implementing best practices to achieve tangible improvements in key performance indicators. Over 10 years of experience in manufacturing and process engineering, currently managing automation strategy for Paulo Products.
+					</p>
+				</section>
 
-		<!-- Core Skills -->
-		<section class="resume-section">
-			<h2>Core Skills</h2>
-			<div class="skills-grid">
-				<div class="skill-category">
-					<strong>Capital Projects:</strong> Budgeting, ROI analysis, vendor management, equipment commissioning (up to $3.6M budgets).
-				</div>
-				<div class="skill-category">
-					<strong>Automation:</strong> Robotics (Fanuc, UR), Gantries, CNC, 3D printing, Python, Agentic AI, RPA, Machine Vision, OCR.
-				</div>
-				<div class="skill-category">
-					<strong>Process Improvement:</strong> DMAIC, Root Cause Analysis, Value Stream Mapping, Lean Manufacturing, Six Sigma.
-				</div>
-				<div class="skill-category">
-					<strong>Technical Tools:</strong> 2D & 3D CAD, Project Management, CMMS, IDEs, PLEX, ERP, CLI tools, Powershell, 365.
-				</div>
-			</div>
-		</section>
+				<!-- Professional Experience -->
+				<section class="resume-section">
+					<h2 class="section-title">Professional Experience</h2>
+					
+					<div class="experience-item">
+						<div class="exp-header">
+							<h3>Paulo Products (Aalberts)</h3>
+							<span class="date-badge">2022 – Present</span>
+						</div>
+						<div class="exp-sub">St. Louis, MO | Process Engineer</div>
+						<ul>
+							<li><strong>Automation Project Lead:</strong> Managing CC17 Automated Cell integration (Robotics, Gantry, Vision). <em>Result: Projected reduction of 6 FTEs.</em></li>
+							<li><strong>Multi-Site Standardization:</strong> Standardized work instructions and parameters across international facilities.</li>
+							<li><strong>Cost Engineering:</strong> ROI & feasibility analysis for major capital investments.</li>
+						</ul>
+					</div>
 
-		<!-- Professional Experience -->
-		<section class="resume-section">
-			<h2>Professional Experience</h2>
-			
-			<div class="experience-item">
-				<div class="exp-header">
-					<strong>Paulo Products (Aalberts), St. Louis, MO</strong>
-					<span>August 2022 – Present</span>
-				</div>
-				<em class="job-title">Process Engineer</em>
-				<ul>
-					<li><strong>Automation Project Lead:</strong> Managing the design and deployment of the CC17 Automated Cell. Integrating robotics, gantry systems, machine vision, and custom mechanical design. <em>Result: Projected reduction of 6 FTEs.</em></li>
-					<li><strong>Multi-Site Standardization:</strong> Standardized work instruction format and processing parameters across US and Mexico facilities. <em>Result: Optimized processes through established best practices.</em></li>
-					<li><strong>Cost Engineering:</strong> Performed technical and financial feasibility study for capex installation in Nashville. <em>Result: Avoided non-viable investment by identifying critical ROI risks.</em></li>
-					<li><strong>Compliance Management:</strong> Leading administrative CMMC compliance initiative. <em>Result: Implemented high-efficiency VDI solution bypassing complex custom builds.</em></li>
-				</ul>
-			</div>
+					<div class="experience-item">
+						<div class="exp-header">
+							<h3>Henniges Automotive</h3>
+							<span class="date-badge">2019 – 2022</span>
+						</div>
+						<div class="exp-sub">New Haven, MO | Engineering Program Manager</div>
+						<ul>
+							<li><strong>Capital Project Execution:</strong> Directed $3.6M in upgrades. <em>Result: Achieved $1.6M in annual labor savings.</em></li>
+						</ul>
+					</div>
 
-			<div class="experience-item">
-				<div class="exp-header">
-					<strong>Henniges Automotive, New Haven, MO</strong>
-					<span>June 2019 – July 2022</span>
-				</div>
-				<em class="job-title">Engineering Program Manager</em>
-				<ul>
-					<li><strong>Capital Project Execution:</strong> Directed $3.6M in capital upgrades, including advanced robotics and machine vision systems. <em>Result: Achieved $1.6M in annual labor savings.</em></li>
-				</ul>
+					<div class="experience-item">
+						<div class="exp-header">
+							<h3>Shure Manufacturing Corp</h3>
+							<span class="date-badge">2015 – 2019</span>
+						</div>
+						<div class="exp-sub">Washington, MO | Design Engineer</div>
+						<ul>
+							<li><strong>Product Development:</strong> Developed RFID-based tool tracking system. <em>Result: Generated $1M/year in new revenue.</em></li>
+						</ul>
+					</div>
+				</section>
 			</div>
 
-			<div class="experience-item">
-				<div class="exp-header">
-					<strong>Shure Manufacturing Corporation, Washington, MO</strong>
-					<span>March 2015 – June 2019</span>
-				</div>
-				<em class="job-title">Design Engineer</em>
-				<ul>
-					<li><strong>Product Development:</strong> Developed a custom RFID-based tool tracking system. <em>Result: Generated $1M/year in new revenue for defense contracts.</em></li>
-					<li><strong>Production Engineering:</strong> Optimized Bill of Materials (BOMs) and coordinated with vendors to streamline manufacturing.</li>
-				</ul>
-			</div>
-		</section>
+			<!-- Side Column -->
+			<aside class="side-col">
+				<section class="resume-section">
+					<h2 class="section-title">Technical Skills</h2>
+					<div class="skill-group">
+						<span class="skill-label">Automation</span>
+						<div class="skill-tags">
+							<span>Robotics</span> <span>Vision</span> <span>PLC</span> <span>Python</span> <span>AI</span>
+						</div>
+					</div>
+					<div class="skill-group">
+						<span class="skill-label">Methodology</span>
+						<div class="skill-tags">
+							<span>Lean</span> <span>Six Sigma</span> <span>DMAIC</span> <span>VSM</span>
+						</div>
+					</div>
+					<div class="skill-group">
+						<span class="skill-label">Tools</span>
+						<div class="skill-tags">
+							<span>CAD</span> <span>ERP</span> <span>CLI</span> <span>Wrangler</span>
+						</div>
+					</div>
+				</section>
 
-		<!-- Education -->
-		<section class="resume-section">
-			<h2>Education</h2>
-			<div class="exp-header">
-				<strong>Missouri University of Science and Technology</strong>
-				<span>2014</span>
-			</div>
-			<p>B.S., Mechanical Engineering (Emphasis in Design Analysis)</p>
-		</section>
+				<section class="resume-section">
+					<h2 class="section-title">Education</h2>
+					<div class="edu-item">
+						<strong>Missouri S&T</strong>
+						<span>B.S. Mechanical Engineering</span>
+						<small>Emphasis in Design Analysis</small>
+					</div>
+				</section>
+			</aside>
+		</div>
 
 		<!-- Quote -->
 		<blockquote class="personal-statement">
-			"I focus on building operational systems that can not break. My approach is to standardize the chaos, use real-time data to drive logical decisions, and lead by example."
+			"I focus on building operational systems that can not break. My approach is to standardize the chaos and lead by example."
 		</blockquote>
 
 		<!-- Technical Portfolio (Web Only) -->
 		<section class="resume-section print-hide">
-			<h2 class="portfolio-title">Technical Project Portfolio</h2>
+			<h2 class="section-title centered">Technical Project Documentation</h2>
 			<div class="projects-grid">
 				{projects.map((project) => (
 					<ProjectCard project={project} />
 				))}
 			</div>
 		</section>
-		
-		<footer class="print-only">
-			<p>Digital portfolio and detailed project documentation available at: github.com/rdyb33</p>
-		</footer>
 	</main>
 </Layout>
 
 <style>
+	:root {
+		--primary: #0f172a;
+		--accent: #2563eb;
+		--accent-soft: #dbeafe;
+		--text-main: #334155;
+		--text-bold: #0f172a;
+		--border: #e2e8f0;
+	}
+
+	.blueprint-bg {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: 
+			linear-gradient(var(--border) 1px, transparent 1px),
+			linear-gradient(90deg, var(--border) 1px, transparent 1px);
+		background-size: 40px 40px;
+		opacity: 0.15;
+		z-index: -1;
+		pointer-events: none;
+	}
+
 	.resume-container {
-		max-width: 850px;
-		margin: 0 auto;
-		padding: 4rem 2rem;
-		font-family: "Inter", system-ui, -apple-system, sans-serif;
-		color: #1a1a1a;
-		line-height: 1.5;
+		max-width: 1100px;
+		margin: 2rem auto;
+		background: #ffffff;
+		box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+		border-radius: 8px;
+		padding: 4rem;
+		border-top: 8px solid var(--primary);
 	}
 
 	.resume-header {
-		text-align: center;
-		margin-bottom: 2.5rem;
-		border-bottom: 2px solid #1a1a1a;
-		padding-bottom: 1.5rem;
+		margin-bottom: 3rem;
 	}
 
 	h1 {
-		font-size: 2.5rem;
-		font-weight: 800;
-		margin: 0 0 0.5rem 0;
-		text-transform: uppercase;
-		letter-spacing: 0.05em;
+		font-size: 3.5rem;
+		font-weight: 900;
+		margin: 0 0 1rem 0;
+		color: var(--primary);
+		letter-spacing: -0.025em;
+		line-height: 1;
 	}
+
+	.accent-text { color: var(--accent); }
 
 	.contact-info {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: center;
-		gap: 0.75rem 1.5rem;
-		font-size: 0.9rem;
-		color: #444;
+		gap: 1.5rem;
+		font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+		font-size: 0.85rem;
 	}
 
-	.contact-info a {
-		color: inherit;
-		text-decoration: none;
-	}
+	.label { color: var(--accent); font-weight: bold; margin-right: 0.4rem; }
+	.contact-info a { color: inherit; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.2s; }
+	.contact-info a:hover { border-color: var(--accent); color: var(--accent); }
 
-	.resume-section {
-		margin-bottom: 2rem;
-	}
-
-	h2 {
-		font-size: 1.1rem;
-		font-weight: 700;
-		text-transform: uppercase;
-		border-bottom: 1px solid #ddd;
-		padding-bottom: 0.3rem;
-		margin-bottom: 1rem;
-		color: #000;
-		letter-spacing: 0.05em;
-	}
-
-	.skills-grid {
+	.resume-grid {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 0.75rem 2rem;
-		font-size: 0.9rem;
+		grid-template-columns: 1fr 300px;
+		gap: 4rem;
 	}
 
-	.experience-item {
+	.section-title {
+		font-size: 0.85rem;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: var(--accent);
+		font-weight: 800;
 		margin-bottom: 1.5rem;
-	}
-
-	.exp-header {
 		display: flex;
-		justify-content: space-between;
-		font-size: 1rem;
-		margin-bottom: 0.1rem;
+		align-items: center;
+		gap: 1rem;
 	}
 
-	.job-title {
-		display: block;
-		font-size: 0.95rem;
-		color: #555;
-		margin-bottom: 0.5rem;
+	.section-title::after {
+		content: "";
+		flex-grow: 1;
+		height: 1px;
+		background: var(--border);
 	}
 
-	ul {
-		margin: 0;
-		padding-left: 1.2rem;
-		font-size: 0.9rem;
-	}
+	.section-title.centered { justify-content: center; }
+	.section-title.centered::before { content: ""; flex-grow: 1; height: 1px; background: var(--border); }
 
-	li {
-		margin-bottom: 0.4rem;
-	}
+	.summary-text { font-size: 1.1rem; line-height: 1.7; color: var(--text-main); margin-bottom: 2.5rem; }
+	.summary-text strong { color: var(--text-bold); }
+
+	.experience-item { margin-bottom: 2.5rem; }
+	.exp-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.25rem; }
+	.exp-header h3 { margin: 0; font-size: 1.25rem; font-weight: 700; color: var(--text-bold); }
+	.date-badge { background: var(--accent-soft); color: var(--accent); padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: 700; }
+	.exp-sub { font-size: 0.95rem; color: var(--text-main); font-weight: 500; margin-bottom: 0.75rem; }
+
+	ul { padding-left: 1.25rem; margin: 0; }
+	li { margin-bottom: 0.5rem; font-size: 0.95rem; color: var(--text-main); }
+	li strong { color: var(--text-bold); }
+
+	.skill-group { margin-bottom: 1.5rem; }
+	.skill-label { display: block; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: #64748b; margin-bottom: 0.5rem; }
+	.skill-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+	.skill-tags span { background: #f8fafc; border: 1px solid var(--border); padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500; }
+
+	.edu-item { display: flex; flex-direction: column; gap: 0.2rem; font-size: 0.95rem; }
+	.edu-item small { color: #64748b; }
 
 	.personal-statement {
+		background: #f8fafc;
+		border: 1px solid var(--border);
+		padding: 2rem;
+		border-radius: 8px;
 		font-style: italic;
-		border-left: 3px solid #eee;
-		padding-left: 1.5rem;
-		margin: 3rem 0;
-		color: #666;
+		color: var(--text-main);
 		font-size: 1.1rem;
 		text-align: center;
-		border-right: 3px solid #eee;
-		padding-right: 1.5rem;
-	}
-
-	.portfolio-title {
-		margin-top: 4rem;
-		margin-bottom: 2rem;
+		margin: 4rem 0;
 	}
 
 	.projects-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-		gap: 2rem;
+		grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+		gap: 2.5rem;
+		margin-top: 2rem;
 	}
 
-	.print-only { display: none; }
-
 	@media print {
-		.resume-container {
-			padding: 0;
+		.blueprint-bg { display: none; }
+		.resume-container { 
+			box-shadow: none; 
+			padding: 0; 
+			margin: 0; 
 			max-width: 100%;
+			border-top: none;
 		}
+		.resume-grid { grid-template-columns: 1fr; gap: 1rem; }
+		.side-col { order: -1; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem; }
 		.print-hide { display: none !important; }
-		.print-only { display: block; }
-		.resume-header { border-bottom-width: 1px; }
-		h1 { font-size: 2rem; }
-		.personal-statement { margin: 1.5rem 0; font-size: 0.9rem; }
-		body { background: white; }
+		h1 { font-size: 2.5rem; }
+		.resume-header { border-bottom: 2px solid var(--primary); padding-bottom: 1rem; }
 		@page { margin: 0.5in; }
 	}
 
-	@media (max-width: 640px) {
-		.skills-grid { grid-template-columns: 1fr; }
-		.exp-header { flex-direction: column; }
-		.projects-grid { grid-template-columns: 1fr; }
+	@media (max-width: 900px) {
+		.resume-container { padding: 2rem; }
+		.resume-grid { grid-template-columns: 1fr; }
+		.side-col { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+		h1 { font-size: 2.5rem; }
+	}
+
+	@media (max-width: 600px) {
+		.side-col { grid-template-columns: 1fr; }
 	}
 </style>
