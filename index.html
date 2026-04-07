@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ron D. Bulischeck III | Process & Automation Engineer</title>
+    <meta
+      name="description"
+      content="Resume of Ron D. Bulischeck III - Process Engineer specializing in automation, capital projects, and process optimization."
+    />
+    <style>
+      /* CORE VARIABLES */
+      :root {
+        --bg: #090e17; /* Deeper slate for higher contrast */
+        --surface: #111827;
+        --primary: #ff6b00; /* High-visibility Thermal Orange */
+        --primary-glow: rgba(255, 107, 0, 0.15);
+        --text-main: #f3f4f6;
+        --text-muted: #9ca3af;
+        --metric: #0ea5e9; /* Electric Blue */
+        --metric-glow: rgba(14, 165, 233, 0.15);
+        --border: #1f2937;
+        --font-main:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
+        --font-mono:
+          ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+          "Liberation Mono", "Courier New", monospace;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: var(--font-main);
+        background-color: var(--bg);
+        color: var(--text-main);
+        line-height: 1.6;
+        padding: 3rem 1rem;
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
+      }
+
+      /* HARDWARE-ACCELERATED ANIMATIONS */
+      @keyframes bootSequence {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes pulseGlow {
+        0%,
+        100% {
+          box-shadow: 0 0 0 0 var(--metric-glow);
+        }
+        50% {
+          box-shadow: 0 0 8px 0 var(--metric-glow);
+        }
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: var(--surface);
+        padding: 4rem;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        box-shadow:
+          0 25px 50px -12px rgba(0, 0, 0, 0.5),
+          inset 0 1px 0 rgba(255, 255, 255, 0.05);
+        position: relative;
+      }
+
+      /* Top Accent Line */
+      .container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, var(--primary), var(--metric));
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+
+      /* SEQUENTIAL LOADING */
+      header {
+        animation: bootSequence 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+      #summary {
+        animation: bootSequence 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.1s forwards;
+        opacity: 0;
+      }
+      #skills {
+        animation: bootSequence 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+        opacity: 0;
+      }
+      #experience {
+        animation: bootSequence 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+        opacity: 0;
+      }
+      #education {
+        animation: bootSequence 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
+        opacity: 0;
+      }
+
+      /* HEADER STYLING */
+      header {
+        padding-bottom: 2rem;
+        margin-bottom: 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .header-main h1 {
+        font-size: 2.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        line-height: 1.1;
+        margin-bottom: 0.5rem;
+        /* Gradient Text Effect */
+        background: linear-gradient(135deg, #ffffff 0%, #9ca3af 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .header-main .subtitle {
+        font-family: var(--font-mono);
+        color: var(--primary);
+        font-size: 1rem;
+        display: inline-block;
+        border-right: 2px solid var(--primary);
+        padding-right: 5px;
+        animation: blinkCursor 1s step-end infinite;
+      }
+
+      @keyframes blinkCursor {
+        50% {
+          border-color: transparent;
+        }
+      }
+
+      .contact-info {
+        text-align: right;
+        font-family: var(--font-mono);
+        font-size: 0.85rem;
+        color: var(--text-muted);
+        line-height: 1.8;
+      }
+
+      .contact-info a {
+        color: var(--metric);
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+
+      .contact-info a:hover {
+        color: var(--text-main);
+        text-decoration: underline;
+      }
+
+      /* TYPOGRAPHY & SECTIONS */
+      section {
+        margin-bottom: 3.5rem;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+        font-family: var(--font-mono);
+        text-transform: uppercase;
+        color: var(--primary);
+        margin-bottom: 2rem;
+        letter-spacing: 0.15em;
+        display: flex;
+        align-items: center;
+      }
+
+      h2::before {
+        content: "/>";
+        margin-right: 0.75rem;
+        opacity: 0.5;
+      }
+
+      h2::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: linear-gradient(90deg, var(--border), transparent);
+        margin-left: 1.5rem;
+      }
+
+      .quote {
+        font-family: var(--font-mono);
+        color: var(--text-muted);
+        border-left: 2px solid var(--primary);
+        padding: 1rem 1.5rem;
+        margin: 2rem 0;
+        background: linear-gradient(90deg, var(--primary-glow), transparent);
+        font-size: 0.85rem;
+        line-height: 1.7;
+        border-radius: 0 4px 4px 0;
+      }
+
+      /* INTERACTIVE EXPERIENCE BLOCKS */
+      .exp-item {
+        margin-bottom: 2.5rem;
+        padding: 1.5rem;
+        border-radius: 6px;
+        border: 1px solid transparent;
+        border-left: 2px solid var(--border);
+        background: rgba(255, 255, 255, 0.01);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      /* Thermal Hover Targeting */
+      .exp-item:hover {
+        transform: translateX(8px);
+        border-color: var(--border);
+        border-left: 2px solid var(--primary);
+        background: rgba(255, 255, 255, 0.03);
+        box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+      }
+
+      .exp-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: wrap;
+        margin-bottom: 0.25rem;
+      }
+
+      .job-title {
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: var(--text-main);
+      }
+
+      .job-date {
+        font-family: var(--font-mono);
+        font-size: 0.85rem;
+        color: var(--text-muted);
+        background: #1f2937;
+        padding: 0.2rem 0.6rem;
+        border-radius: 4px;
+      }
+
+      .exp-sub {
+        color: var(--primary);
+        font-size: 0.95rem;
+        margin-bottom: 1.25rem;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      li {
+        margin-bottom: 1rem;
+        font-size: 0.95rem;
+        padding-left: 1.75rem;
+        position: relative;
+        color: #d1d5db;
+      }
+
+      li::before {
+        content: "→";
+        font-family: var(--font-mono);
+        color: var(--border);
+        position: absolute;
+        left: 0;
+        font-size: 1rem;
+        top: -0.1rem;
+        transition: color 0.3s ease;
+      }
+
+      .exp-item:hover li::before {
+        color: var(--primary);
+      }
+
+      li strong {
+        color: var(--text-main);
+      }
+
+      /* DATA METRIC HIGHLIGHTING */
+      .metric {
+        font-family: var(--font-mono);
+        font-weight: 700;
+        color: var(--metric);
+        background: var(--metric-glow);
+        padding: 0.1rem 0.4rem;
+        border-radius: 3px;
+        border: 1px solid rgba(14, 165, 233, 0.3);
+        animation: pulseGlow 4s infinite;
+      }
+
+      /* SKILLS GRID */
+      .skills-grid {
+        display: grid;
+        grid-template-columns: 220px 1fr;
+        gap: 1.5rem;
+        font-size: 0.95rem;
+      }
+
+      .skill-category {
+        font-family: var(--font-mono);
+        font-size: 0.85rem;
+        color: var(--text-main);
+        text-transform: uppercase;
+        padding-right: 1rem;
+      }
+
+      .skill-list {
+        color: var(--text-muted);
+        line-height: 1.8;
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 768px) {
+        .container {
+          padding: 2rem 1.5rem;
+        }
+        .skills-grid {
+          grid-template-columns: 1fr;
+          gap: 0.5rem;
+        }
+        .skill-category {
+          margin-top: 1rem;
+          color: var(--primary);
+        }
+        .contact-info {
+          text-align: left;
+        }
+        .exp-item {
+          padding: 1rem;
+        }
+        .exp-item:hover {
+          transform: none;
+        } /* Disable shift on mobile */
+        .job-date {
+          margin-top: 0.5rem;
+        }
+      }
+
+      /* FAIL-SAFE PRINT LOGIC (Optimized for Professional PDF Export) */
+      @media print {
+        * {
+          animation: none !important;
+          transition: none !important;
+          box-shadow: none !important;
+          text-shadow: none !important;
+          opacity: 1 !important;
+          visibility: visible !important;
+          -webkit-print-color-adjust: exact !important;
+          print-color-adjust: exact !important;
+        }
+        body {
+          background: white !important;
+          color: #1f2937 !important;
+          padding: 0 !important;
+          margin: 0 !important;
+          -webkit-font-smoothing: auto;
+          font-size: 11pt !important;
+        }
+        .container {
+          border: none !important;
+          padding: 0 !important;
+          max-width: 100% !important;
+          background: white !important;
+          box-shadow: none !important;
+          margin: 0 !important;
+          width: 100% !important;
+        }
+        /* Restore the top accent line for a professional touch */
+        .container::before {
+          display: block !important;
+          height: 3pt !important;
+          background: linear-gradient(90deg, #ff6b00, #0ea5e9) !important;
+        }
+        .header-main h1 {
+          color: #111827 !important;
+          font-size: 26pt !important;
+          margin-bottom: 0.25rem !important;
+          background: none !important;
+          -webkit-text-fill-color: initial !important;
+        }
+        .header-main .subtitle {
+          border: none !important;
+          color: #cc5500 !important; /* Slightly darker orange for print contrast */
+          font-size: 13pt !important;
+          font-weight: bold !important;
+          text-transform: uppercase !important;
+          letter-spacing: 0.05em !important;
+        }
+        .contact-info {
+          color: #4b5563 !important;
+          font-size: 10pt !important;
+        }
+        .contact-info a {
+          color: #0284c7 !important; /* Professional blue */
+          text-decoration: none !important;
+        }
+        h2 {
+          color: #111827 !important;
+          border-bottom: 1.5pt solid #e5e7eb !important;
+          margin: 2rem 0 1rem 0 !important;
+          font-size: 12pt !important;
+          display: flex !important;
+        }
+        /* Add a small colored marker to headers */
+        h2::before {
+          content: "/>" !important;
+          color: #cc5500 !important;
+          margin-right: 0.5rem !important;
+          display: inline !important;
+          font-family: var(--font-mono) !important;
+          opacity: 1 !important;
+        }
+        h2::after {
+          display: none !important;
+        }
+        .quote {
+          border-left: 3pt solid #ff6b00 !important;
+          background: #fff7ed !important; /* Very light orange tint */
+          padding: 1rem 1.25rem !important;
+          margin: 1.5rem 0 !important;
+          font-size: 10pt !important;
+          color: #374151 !important;
+          font-style: italic !important;
+        }
+        .exp-item {
+          border: none !important;
+          border-left: 1.5pt solid #f3f4f6 !important;
+          padding: 0 0 0 1.25rem !important;
+          margin-bottom: 1.75rem !important;
+          page-break-inside: avoid !important;
+        }
+        .job-title {
+          font-size: 12pt !important;
+          color: #111827 !important;
+        }
+        .job-date {
+          background: #f3f4f6 !important;
+          color: #4b5563 !important;
+          font-size: 9pt !important;
+          padding: 0.1rem 0.4rem !important;
+          border-radius: 3px !important;
+        }
+        .exp-sub {
+          font-size: 10.5pt !important;
+          color: #cc5500 !important;
+          margin-bottom: 0.5rem !important;
+        }
+        .skills-grid {
+          display: block !important;
+        }
+        .skill-category {
+          color: #111827 !important;
+          font-weight: bold !important;
+          margin-top: 0.75rem !important;
+          font-size: 10pt !important;
+          text-decoration: underline !important;
+          text-underline-offset: 2pt !important;
+        }
+        .skill-list {
+          font-size: 10pt !important;
+          color: #374151 !important;
+          margin-bottom: 0.5rem !important;
+        }
+        li {
+          margin-bottom: 0.5rem !important;
+          font-size: 10pt !important;
+          padding-left: 1.25rem !important;
+          color: #374151 !important;
+        }
+        li::before {
+          content: "→" !important;
+          color: #cc5500 !important;
+          left: 0 !important;
+          font-weight: bold !important;
+        }
+        li strong {
+          color: #111827 !important;
+        }
+        .metric {
+          background: #f0f9ff !important; /* Very light blue tint */
+          color: #0369a1 !important;
+          border: 1px solid #bae6fd !important;
+          padding: 0.1rem 0.3rem !important;
+          border-radius: 3px !important;
+          font-weight: bold !important;
+        }
+        section {
+          page-break-inside: avoid !important;
+        }
+        @page {
+          margin: 0.75in !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header-main">
+          <h1>Ron D. Bulischeck III</h1>
+          <div class="subtitle">Process & Automation Engineer</div>
+        </div>
+        <div class="contact-info">
+          Union, MO 63084<br />
+          <a href="tel:6602383658">(660) 238-3658</a><br />
+          <a href="mailto:ron@bulischeck.com">ron@bulischeck.com</a>
+        </div>
+      </header>
+
+      <section id="summary">
+        <h2>Executive Summary</h2>
+        <p style="color: var(--text-muted)">
+          Strategic professional focused on defining clear, measurable
+          objectives for operational efficiency. Expert in process optimization,
+          data-driven decision-making, and implementing best practices to
+          achieve tangible improvements in key performance indicators. Over 10
+          years of experience in manufacturing and process engineering, with a
+          proven ability to execute complex technical projects that deliver
+          measurable results. Currently managing automation strategy and process
+          standardization for Paulo Products (Aalberts).
+        </p>
+
+        <div class="quote">
+          "I focus on building operational systems that can not break. My
+          approach is to standardize the chaos, use real-time data to drive
+          logical decisions, and lead by example. I don't look for 'quick fixes'
+          that create problems later; I enjoy building clean processes that
+          scale and deliver intended results every time."
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Core Capabilities</h2>
+        <div class="skills-grid">
+          <div class="skill-category">Capital Projects</div>
+          <div class="skill-list">
+            Budgeting, ROI analysis, vendor management, equipment commissioning
+            (up to <span class="metric">$3.6M</span> budgets).
+          </div>
+
+          <div class="skill-category">Automation & AI</div>
+          <div class="skill-list">
+            Robotics (Fanuc, UR), Gantries, CNC, 3D printing, Python, Agentic AI
+            workflows (A2A, RAG), RPA, Machine Vision, OCR, Laser systems.
+          </div>
+
+          <div class="skill-category">Process Engineering</div>
+          <div class="skill-list">
+            DMAIC, Root Cause Analysis, Value Stream Mapping, Lean
+            Manufacturing, Six Sigma.
+          </div>
+
+          <div class="skill-category">Technical Stack</div>
+          <div class="skill-list">
+            2D & 3D CAD, Project Management, CMMS, IDES, PLEX, ERP, CLI tools,
+            Powershell, Microsoft 365.
+          </div>
+
+          <div class="skill-category">Compliance</div>
+          <div class="skill-list">ITAR/EAR export controls, CMMC.</div>
+        </div>
+      </section>
+
+      <section id="experience">
+        <h2>Execution & Results</h2>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="job-title">Process Engineer</span>
+            <span class="job-date">Aug 2022 - Present</span>
+          </div>
+          <div class="exp-sub">Paulo Products (Aalberts) | St. Louis, MO</div>
+          <ul>
+            <li>
+              <strong>Automation Project Lead:</strong> Managing the design and
+              deployment of the CC17 Automated Cell. Integrating robotics,
+              gantry systems, machine vision, and custom mechanical design to
+              automate manual processes.
+              <em
+                >Result: Projected reduction of
+                <span class="metric">6 FTEs</span>.</em
+              >
+            </li>
+            <li>
+              <strong>Multi-Site Standardization:</strong> Standardized work
+              instruction format, preventative maintenance activities, and
+              processing parameters across multiple US and Mexico facilities.
+              <em
+                >Result: Established clear, measurable objectives for
+                operational efficiency.</em
+              >
+            </li>
+            <li>
+              <strong>Cost Engineering:</strong> Performed a comprehensive
+              technical and financial feasibility study for a proposed capex
+              installation in Nashville.
+              <em
+                >Result: Identified critical project risks and poor ROI via A3
+                methodology, avoiding a non-viable capital investment.</em
+              >
+            </li>
+            <li>
+              <strong>Capital Equipment ROI:</strong> Built data models to
+              justify equipment purchases.
+              <em
+                >Result: Secured management approval by demonstrating clear
+                payback periods based on daily throughput analysis and labor
+                reduction.</em
+              >
+            </li>
+            <li>
+              <strong>Compliance Management:</strong> Leading the administrative
+              CMMC compliance initiative.
+              <em
+                >Result: Guided the organization to adopt a high-efficiency VDI
+                solution, bypassing complex custom builds for a more robust
+                commercial framework.</em
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="job-title">Engineering Program Manager</span>
+            <span class="job-date">Jun 2019 - Jul 2022</span>
+          </div>
+          <div class="exp-sub">Henniges Automotive | New Haven, MO</div>
+          <ul>
+            <li>
+              <strong>Capital Project Execution:</strong> Directed
+              <span class="metric">$3.6M</span> in capital upgrades, including
+              the installation of advanced robotics and machine vision systems.
+              <em
+                >Result: Achieved <span class="metric">$1.6M</span> in annual
+                labor savings and modernized aging production lines.</em
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="job-title">Design Engineer</span>
+            <span class="job-date">Mar 2015 - Jun 2019</span>
+          </div>
+          <div class="exp-sub">
+            Shure Manufacturing Corporation | Washington, MO
+          </div>
+          <ul>
+            <li>
+              <strong>Product Development:</strong> Developed a custom
+              RFID-based tool tracking system.
+              <em
+                >Result: Generated <span class="metric">$1M/year</span> in new
+                revenue by meeting specific requirements for aviation and
+                defense contracts.</em
+              >
+            </li>
+            <li>
+              <strong>Production Engineering:</strong> Optimized Bill of
+              Materials (BOMs) and coordinated with vendors to streamline the
+              manufacturing of sheet metal assemblies.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <div class="exp-item" style="margin-bottom: 0">
+          <div class="exp-header">
+            <span class="job-title">B.S., Mechanical Engineering</span>
+            <span class="job-date">2014</span>
+          </div>
+          <div class="exp-sub" style="margin-bottom: 0.25rem">
+            Missouri University of Science and Technology
+          </div>
+          <div style="color: var(--text-muted); font-size: 0.95rem">
+            Emphasis in Design Analysis
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
