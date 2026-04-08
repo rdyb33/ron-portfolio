@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd:*)",
+      "Bash(cp \"Portfolio Pics/Automation/\"*.jpg \"public/images/projects/automation/\")",
+      "Bash(cp \"Portfolio Pics/Automation/\"*.png \"public/images/projects/automation/\")",
+      "Bash(cp \"Portfolio Pics/Design/\"*.jpg \"public/images/projects/design/\")",
+      "Bash(cp \"Portfolio Pics/Design/\"*.png \"public/images/projects/design/\")",
+      "Bash(cp \"Portfolio Pics/3D Prints/\"*.jpg \"public/images/projects/3d-prints/\")",
+      "Bash(find \"public/images/projects\" -name \"* - Copy*\" -delete)",
+      "Bash(BASE=\"C:/Home/Laboratory/Code/bulischeck.com/resume_site/ron-portfolio\")",
+      "Read(//c/Home/Laboratory/Code/bulischeck.com/resume_site/ron-portfolio/$BASE/Portfolio Pics/**)",
+      "Read(//c/Home/Laboratory/Code/bulischeck.com/resume_site/ron-portfolio/$BASE/public/images/projects/**)",
+      "Bash(npm run:*)"
+    ]
+  }
+}

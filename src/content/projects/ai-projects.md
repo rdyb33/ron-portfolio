@@ -2,7 +2,7 @@
 title: "Agentic AI & RPA Workflows"
 description: "Development of Python-based Agentic AI workflows and RPA for technical and administrative process automation."
 date: 2023-01-01
-image: "/images/projects/ai-automation.jpg"
+image: "/images/projects/automation/ApplicationFrameHost_sLRNpNe1Bs.jpg"
 tags: ["Python", "Agentic AI", "RAG", "RPA", "A2A", "LLM"]
 ---
 

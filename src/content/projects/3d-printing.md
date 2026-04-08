@@ -2,7 +2,7 @@
 title: "Additive Manufacturing Integration"
 description: "Implementation of 3D printing workflows for rapid prototyping, custom tooling, and manufacturing aids."
 date: 2022-08-01
-image: "/images/projects/3d-printing.jpg"
+image: "/images/projects/3d-prints/PXL_20260220_224027999.jpg"
 tags: ["3D Printing", "Additive Manufacturing", "Tooling", "Rapid Prototyping", "CAD"]
 ---
 

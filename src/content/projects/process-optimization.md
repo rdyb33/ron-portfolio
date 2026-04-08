@@ -2,7 +2,7 @@
 title: "Multi-Site Process Standardization"
 description: "Optimization and standardization of manufacturing parameters and work instructions across international facilities."
 date: 2022-08-01
-image: "/images/projects/process-optimization.jpg"
+image: "/images/projects/design/PXL_20260318_204901655.jpg"
 tags: ["Lean", "Six Sigma", "DMAIC", "Standardization", "KPI", "VSM"]
 ---
 
